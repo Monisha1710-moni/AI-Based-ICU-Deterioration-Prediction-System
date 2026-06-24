@@ -93,13 +93,13 @@ python app.py
 ## Screenshots
 
 ### Home Page
-![Home Page](Homepage.png)
+![Home Page](homepage.png)
 
 ### Low Risk Prediction
-![Low Risk](low%20Risk.png)
+![Low Risk](lowRisk.png)
 
 ### High Risk Prediction
-![High Risk](High%20Risk.png)
+![High Risk](HighRisk.png)
 
 ### SHAP Analysis
 ![SHAP Analysis](SHAP-AI.png)
