@@ -100,7 +100,7 @@ python app.py
 - Interactive Flask Web Application
 
 
-Future Enhancements
+## Future Enhancements
 
 - Real-time patient monitoring
 - Early warning alert system
@@ -110,7 +110,8 @@ Future Enhancements
 - Continuous patient data analysis
 - Automated risk notifications
 
-Author
+## Author
+
 **Monisha K**
 Computer Science and Engineering (Data Science)
 Dayananda Sagar University
