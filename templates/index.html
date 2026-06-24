@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICU Deterioration Prediction System</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script defer src="{{ url_for('static', filename='script.js') }}"></script>
+
+</head><body><section class="hero">
+    <div class="hero-overlay">
+        <h1>🏥 ICU Deterioration Prediction System</h1>
+        <p>AI-Powered Early Warning System for Critical Care Patients</p>
+        <p class="subtitle">
+            Real-Time Risk Assessment using Machine Learning & XGBoost
+        </p>
+    </div>
+</section>
+
+<div class="container">
+
+    <div class="form-card">
+
+        <form action="/predict" method="POST">
+
+            <div class="form-grid">
+
+                <input type="number" step="any" name="age"
+                       value="{{ form_values.age if form_values else '' }}"
+                       placeholder="Age" required>
+
+                <input type="number" step="any" name="glucose"
+                       value="{{ form_values.glucose if form_values else '' }}"
+                       placeholder="Glucose" required>
+
+                <input type="number" step="any" name="hr"
+                       value="{{ form_values.hr if form_values else '' }}"
+                       placeholder="Heart Rate" required>
+
+                <input type="number" step="any" name="temp"
+                       value="{{ form_values.temp if form_values else '' }}"
+                       placeholder="Temperature" required>
+
+                <input type="number" step="any" name="sysabp"
+                       value="{{ form_values.sysabp if form_values else '' }}"
+                       placeholder="Systolic BP" required>
+
+                <input type="number" step="any" name="resprate"
+                       value="{{ form_values.resprate if form_values else '' }}"
+                       placeholder="Respiratory Rate" required>
+
+            </div>
+
+            <button class="predict-btn" type="submit">
+                Predict Risk
+            </button>
+
+        </form>
+
+        {% if error %}
+        <div class="result-card">
+            <h3>{{ error }}</h3>
+        </div>
+        {% endif %}
+
+        {% if prediction %}
+        <div class="result-card">
+
+            <h2>{{ prediction }}</h2>
+
+            <div class="confidence-box">
+                <h3>Confidence Score</h3>
+                <div class="confidence-value">
+                    {{ confidence }}%
+                </div>
+            </div>
+
+            <p>
+                <strong>Risk Level:</strong>
+                {{ risk_level }}
+            </p>
+
+        </div>
+        {% endif %}
+
+    </div>
+
+    <section class="features">
+
+        <h2>🧠 AI System Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>⚡ Real-Time Prediction</h3>
+                <p>Instant ICU risk prediction using patient vital signs.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🤖 XGBoost ML Model</h3>
+                <p>Advanced machine learning model trained on ICU patient records.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Risk Assessment</h3>
+                <p>Predicts deterioration risk with confidence percentage.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🏥 Clinical Support</h3>
+                <p>Helps healthcare professionals identify high-risk patients early.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="shap-section">
+
+        <h2>🔍 Explainable AI (SHAP)</h2>
+
+        <div class="shap-card">
+
+            <img src="{{ url_for('static', filename='shap_summary.png') }}"
+                 alt="SHAP Summary Plot">
+
+            <p>
+                SHAP (SHapley Additive Explanations) explains
+                how each clinical feature contributes to the
+                ICU deterioration prediction.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="about">
+
+        <h2>About the Model</h2>
+
+        <div class="about-cards">
+
+            <div class="about-box">
+                <h3>Model</h3>
+                <p>XGBoost</p>
+            </div>
+
+            <div class="about-box">
+                <h3>Features</h3>
+                <p>6 Clinical Parameters</p>
+            </div>
+
+            <div class="about-box">
+                <h3>Prediction</h3>
+                <p>Real-Time Risk Assessment</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<section class="project-showcase">
+
+    <div class="showcase-image">
+        <img src="{{ url_for('static', filename='1.jpg') }}"
+             alt="ICU Monitoring">
+    </div>
+
+    <div class="showcase-content">
+
+        <h2>About This Project</h2>
+
+        <p>
+            This AI-powered healthcare application predicts ICU patient
+            deterioration using Machine Learning and Explainable AI.
+        </p>
+
+        <p>
+            The model uses Age, Glucose, Heart Rate, Temperature,
+            Systolic Blood Pressure and Respiratory Rate.
+        </p>
+
+        <p>
+            Built using Python, Flask, XGBoost, SHAP,
+            HTML, CSS and JavaScript.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <h3>Developed by Monisha K</h3>
+
+    <p>
+        Data Science Student | Dayananda Sagar University
+    </p>
+
+    <p>
+        Flask • XGBoost • SHAP • Machine Learning • HTML • CSS • JavaScript
+    </p>
+
+</footer>
+
+</body>
+</html>
