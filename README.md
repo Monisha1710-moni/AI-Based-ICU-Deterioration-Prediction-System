@@ -1,4 +1,4 @@
-Markdown
+markdown
 # ICU Deterioration Prediction System
 
 ## Overview
@@ -53,32 +53,32 @@ AI-Based-ICU-Deterioration-Prediction-System/ │ ├── app.py ├── mod
 
 ## How to Run
 markdown
-###1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/Monisha1710-moni/AI-Based-ICU-Deterioration-Prediction-System.git
 ```
 
-###2. Install Dependencies
+### 2. Install Dependencies
 ```bash
 pip install -r requirements.txt```
 
-###3. Run the Flask Application
+### 3. Run the Flask Application
 ```bash
 python app.py
 ```
 
-###4. Open in Browser
+### 4. Open in Browser
 http://127.0.0.1:5000
 http://127.0.0.1:5000
 
-##Future Enhancements
+## Future Enhancements
 Real-time patient monitoring
 Early warning alerts
 Cloud deployment
 Hospital database integration
 Advanced explainable AI support
 
-##Author
+## Author
 Monisha K
 Computer Science and Engineering (Data Science)
 Dayananda Sagar University
