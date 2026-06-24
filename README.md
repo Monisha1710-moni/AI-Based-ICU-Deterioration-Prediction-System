@@ -46,7 +46,7 @@ The system analyzes critical patient parameters and provides risk predictions wi
 
 ---
 
-Project Structure
+## Project Structure
 
 AI-Based-ICU-Deterioration-Prediction-System/
 │
@@ -67,7 +67,7 @@ AI-Based-ICU-Deterioration-Prediction-System/
 │
 └── README.md
 
-How to Run
+## How to Run
 
 1. Clone the Repository
 
