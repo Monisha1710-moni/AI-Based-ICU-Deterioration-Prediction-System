@@ -89,6 +89,16 @@ python app.py
 
 [http://127.0.0.1:5000](http://127.0.01:5000)
 
+## Model Performance
+
+- Machine Learning Model: XGBoost Classifier
+- Explainability: SHAP (SHapley Additive exPlanations)
+- Risk Prediction Categories:
+  - Low Risk
+  - High Risk
+- Confidence Score Generation
+- Interactive Flask Web Application
+
 
 Future Enhancements
 
