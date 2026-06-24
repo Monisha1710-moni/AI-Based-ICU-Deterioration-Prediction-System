@@ -89,6 +89,24 @@ python app.py
 
 [http://127.0.0.1:5000](http://127.0.01:5000)
 
+
+## Screenshots
+
+### Home Page
+![Home Page](Homepage.png)
+
+### Low Risk Prediction
+![Low Risk](low%20Risk.png)
+
+### High Risk Prediction
+![High Risk](High%20Risk.png)
+
+### SHAP Analysis
+![SHAP Analysis](SHAP-AI.png)
+
+### About Page
+![About](about.png)
+
 Future Enhancements
 
 - Real-time patient monitoring
