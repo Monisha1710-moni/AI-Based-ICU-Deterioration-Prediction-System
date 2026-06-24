@@ -4,10 +4,10 @@
 ![Home Page](Homepage.png)
 
 ### Low Risk Prediction
-![Low Risk](low Risk.png)
+![Low Risk](low%20Risk.png)
 
 ### High Risk Prediction
-![High Risk](High Risk.png)
+![High Risk](High%20Risk.png)
 
 ### SHAP Analysis
 ![SHAP Analysis](SHAP-AI.png)
